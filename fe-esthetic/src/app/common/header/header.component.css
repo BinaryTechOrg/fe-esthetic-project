@@ -1,0 +1,73 @@
+.top-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #3A5A40;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+.logo-section{
+    display: flex;
+    transform: scale(0.5);
+    width: 25%;
+}
+
+.text-section{
+    display: flex;
+    justify-content: end;
+    margin-right: 10% !important;
+    width: 75%;
+    a{
+        padding: 20px 30px;
+        color: #FEFAE0;
+        font-family:'Krona One';
+        font-weight: 100;
+        text-decoration: none !important;
+
+    }
+
+    a:hover{
+      opacity: 25%;
+    }
+
+
+}
+
+/*
+media only screen and (max-width: 1116px) {
+    .text-section {
+        display: none;
+    }
+}
+*/
+
+a.special-button{
+    background-color: #FEFAE0 !important;
+    border-radius: 34px;
+    color: #3A5A40 !important;
+    width: 80%;
+    height: 75%;
+    z-index: 999;
+    transition: 0.8 ease-in-out;
+}
+
+a.special-button:hover{
+    background-color: #dda15e !important;
+
+}
+
+.end-section{
+    width: 25%;
+}
+
+@media screen{
+    .logo-section{
+
+    }
+}

@@ -1,0 +1,15 @@
+<div class="top-header">
+    <div class="logo-section">
+        <img style="cursor: pointer;" src="assets/img/logo/logo-black.png" alt="">
+    </div>
+    <div *ngIf="!isMobile" class="text-section">
+        <a href="#">HOME</a>
+        <a href="#">CLASSES</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+        <a class="special-button" href="#">BOOK NOW</a>
+    </div>
+    <div *ngIf="isMobile" class="text-section">
+      <img src="assets/img/header/menu.svg" alt="">
+  </div>
+</div>
