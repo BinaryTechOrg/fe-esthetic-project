@@ -32,11 +32,10 @@
 
     }
 
-    a:hover{
-      opacity: 25%;
-    }
+}
 
-
+.normal-button:hover{
+  opacity: 25%;
 }
 
 /*
