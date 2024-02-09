@@ -149,7 +149,7 @@ a.cookie-link{
 .links-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
@@ -165,14 +165,19 @@ a.cookie-link{
 .icons-container {
   /* Add styling for .icons-container and its children */
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   flex-direction: row;
   margin-top: 10%;
+  margin-right: 10%;
 }
 
 .icons-container img{
   display: flex;
   flex-direction: row;
-  margin-left: 25%;
+  margin-right: 20px;
+  justify-content: flex-start;
+  flex-direction: row;
   cursor: pointer;
   transition: transform 0.8 ease-in-out;
 }

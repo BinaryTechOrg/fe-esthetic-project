@@ -52,9 +52,11 @@ a.special-button{
     color: #3A5A40 !important;
     width: 80%;
     height: 75%;
-    z-index: 999;
-    transition: 0.8 ease-in-out;
-}
+    transition: 0.7 ease-in-out;
+    -webkit-transition:  0.7s ease-in-out;
+    -moz-transition:  0.7s ease-in-out;
+    -o-transition:  0.7s ease-in-out;
+  }
 
 a.special-button:hover{
     background-color: #dda15e !important;
