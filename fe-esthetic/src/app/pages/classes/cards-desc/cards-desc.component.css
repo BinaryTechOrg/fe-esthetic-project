@@ -1,0 +1,163 @@
+img{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.section-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 1000px;
+}
+
+.item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 200px;
+  border-radius: 120px;
+  background-color: #3A5A40;
+}
+
+.inside-items{
+  display: flex;
+  width: 1000px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.round-item{
+  background-color: #ADC178;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.img-rounded{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.descriptions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.top-header{
+  font-family: 'Krona One';
+  color: #FEFAE0;
+  height: 15%;
+}
+
+.desc{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #FEFAE0;
+  opacity: 75%;
+  height: 30%;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  text-decoration: none;
+  font-family: 'Krona One';
+  color: #FEFAE0;
+  background-color: #ADC178;
+  border-radius: 24px;
+  width: 60%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.button:hover{
+  transform: scale(1.2);
+}
+
+.round-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-round{
+  width: 80%;
+  font-family: 'Krona One';
+  font-size: 13px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .item-container {
+    flex-direction: column; /* Stack items vertically */
+    height: 1000px; /* Adjust the height as needed */
+    width: 200px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .inside-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1200px;
+    align-items: center; /* Stack inside items vertically */
+  }
+
+  .round-item {
+    width: 200px; /* Take full width */
+    height: 200px; /* Adjust the height as needed */
+  }
+
+  .descriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+  }
+
+  .top-header{
+    font-family: 'Krona One';
+    color: #FEFAE0;
+    height: 35%;
+    width: 40%;
+    text-align: center;
+  }
+
+  .desc{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FEFAE0;
+    opacity: 75%;
+    height: 80%;
+    width: 40%;
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    text-decoration: none;
+    font-family: 'Krona One';
+    color: #FEFAE0;
+    background-color: #ADC178;
+    border-radius: 24px;
+    width: 43%;
+  }
+}
