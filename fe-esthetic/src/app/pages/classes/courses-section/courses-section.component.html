@@ -3,7 +3,7 @@
     <h1>LEARN FROM THE<br>BEST <span class="color-change">AND JOIN OUR CLASSES</span></h1>
   </div>
   <div class="cards-container"><!-- ROW -->
-    <div class="card-items">  <!-- COLUMN -->
+    <div class="card-items" *ngFor="let item of classItems">  <!-- COLUMN -->
       <div>
         <img class="top-img" src="assets/img/services/service-1.jpg" alt="">
       </div>
@@ -11,40 +11,7 @@
         <h2 class="title">SKINCARE</h2>
       </div>
       <div>
-        <a class="button" href="">LEARN MORE</a>
-      </div>
-    </div>
-    <div class="card-items">  <!-- COLUMN -->
-      <div>
-        <img class="top-img" src="assets/img/services/service-1.jpg" alt="">
-      </div>
-      <div>
-        <h2 class="title">SKINCARE</h2>
-      </div>
-      <div>
-        <a class="button" href="">LEARN MORE</a>
-      </div>
-    </div>
-    <div class="card-items">  <!-- COLUMN -->
-      <div>
-        <img class="top-img" src="assets/img/services/service-1.jpg" alt="">
-      </div>
-      <div>
-        <h2 class="title">SKINCARE</h2>
-      </div>
-      <div>
-        <a class="button" href="">LEARN MORE</a>
-      </div>
-    </div>
-    <div class="card-items">  <!-- COLUMN -->
-      <div>
-        <img class="top-img" src="assets/img/services/service-1.jpg" alt="">
-      </div>
-      <div>
-        <h2 class="title">SKINCARE</h2>
-      </div>
-      <div>
-        <a class="button" href="">LEARN MORE</a>
+        <a [routerLink]="['/specific-class', item.title]" class="button" href="">LEARN MORE</a>
       </div>
     </div>
   </div>
