@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="contact-container">
+  <div class="left-container">
+    <p>WE’RE OPEN TO TALK TO GOOD PEOPLE. JUST SAY HELLO AND WE’LL
+       START A PRODUCTIVE COOPERATION.
+    </p>
+    <div>
+      <p>CALL US: +1 837 652 8800</p>
+      <p>SAY HI: SUPPORT&#64;BESTLOOKER.PRO</p>
+    </div>
+    <div class="img-container">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </div>
+  <div class="right-container">
+    <div class="form-container">
+      <form class="rounded-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <label for="email">Email:</label>
+        <input class="newsletter-input" type="text" id="email" placeholder="EMAIL" formControlName="userName" required>
+        <button class="newsletter-submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
