@@ -21,106 +21,6 @@ img{
   cursor: pointer;
 }
 
-.whole-container{
-  background-color: #fff;
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0; /* Adjust padding as needed */
-  background-color: #3A5A40;
-  color: white;
-  text-align: center;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 3px 3px 0px 0px;
-  border-radius: 24px 24px 0px 0px;
-}
-
-.left-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
-  margin-left: 4%;
-}
-
-.top-logo {
-  display: flex;
-  justify-content: flex-start; /* Align to the left */
-  align-items: center;
-  width: 100%;
-}
-
-.top-logo img{
-  max-width: 40%;
-  height: auto;
-}
-
-.newsletter-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align to the left */
-  align-items: flex-start;
-  width: 100%;
-  margin-left: 0;
-}
-
-.newsletter-header {
-  font-family: 'Krona One';
-  margin-top: 7%;
-}
-
-.rounded-form{
-  background-color: #FEFAE0;
-  border-radius: 24px;
-}
-
-.newsletter-input{
-  height: 30px;
-  width: 400px;
-  border-radius: 24px;
-  border: none;
-  background-color: #FEFAE0;
-}
-
-.newsletter-input:focus{
-  border-color: #FEFAE0;
-}
-
-.newsletter-submit{
-  background-color: #f4a261;
-  border-radius: 24px;
-  height: 40px;
-  width: 80px;
-  border: #f4a261;
-  cursor: pointer;
-  transition: transform 2.5 ease-in-out;
-}
-
-.newsletter-submit:hover{
-  background-color: #ffaf6e;
-  border-radius: 24px;
-  height: 40px;
-  border: #ffaf6e;
-  cursor: pointer;
-}
-
-/* Add media query for smaller screens */
-@media screen and (max-width: 1120px) {
-  .newsletter-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align to the left */
-    align-items: flex-start;
-    max-width: 100%; /* Set maximum width for smaller screens */
-    transform: scale(0.5); /* Example: Scale down to 80% */
-  }
-}
 
 a{
   text-decoration: none;
@@ -145,6 +45,29 @@ a.cookie-link{
 }
 
 /* Add styling for other elements within .left-container */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0; /* Adjust padding as needed */
+  background-color: #3A5A40;
+  color: white;
+  text-align: center;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 4%;
+}
 
 .right-container {
   display: flex;
@@ -157,23 +80,23 @@ a.cookie-link{
 .links-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .left-links {
-  /* Add styling for .left-links */
-  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-/*
 .right-links {
-   Add styling for .right-links and its children
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-*/
 
 .icons-container {
-  /* Add styling for .icons-container and its children */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -205,4 +128,295 @@ a.cookie-link{
 
 a:hover{
   opacity: 25%;
+}
+
+.whole-container{
+  background-color: #fff;
+}
+
+.top-logo {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  width: 100%;
+}
+
+.top-logo img{
+  max-width: 40%;
+  height: auto;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the left */
+  align-items: flex-start;
+  width: 80%;
+  margin-left: 0;
+}
+
+.newsletter-header {
+  font-family: 'Krona One';
+  margin-top: 7%;
+}
+
+.rounded-form{
+  display: flex;
+  align-items: center;
+  background-color: #FEFAE0;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.newsletter-input{
+  height: 30px;
+  width: 80%;
+  border-radius: 24px;
+  border: none;
+  background-color: #FEFAE0;
+}
+
+.newsletter-input:focus{
+  border-color: #FEFAE0;
+}
+
+.newsletter-submit{
+  background-color: #f4a261;
+  border-radius: 24px;
+  height: 40px;
+  width: 20%;
+  border: #f4a261;
+  cursor: pointer;
+  transition: transform 2.5 ease-in-out;
+}
+
+.newsletter-submit:hover{
+  background-color: #ffaf6e;
+  border-radius: 24px;
+  height: 40px;
+  border: #ffaf6e;
+  cursor: pointer;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 1016px) {
+  label{
+    display: none;
+  }
+
+  p{
+    margin-top: 30px;
+    font-family: 'Krona One';
+    font-size: smaller;
+    text-align: justify;
+    font-size: 7px;
+  }
+
+  h3{
+    font-family: 'Krona One';
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  img{
+    cursor: pointer;
+  }
+
+
+  a{
+    text-decoration: none;
+    color: #FEFAE0;
+    font-family: 'Krona One';
+    font-size: 8px;
+  }
+
+  a.privacy-link{
+    text-decoration: none;
+    color: #FEFAE0;
+    font-family: 'Krona One';
+    font-size: 10px;
+  }
+
+  a.cookie-link{
+    text-decoration: none;
+    color: #FEFAE0;
+    font-family: 'Krona One';
+    font-size: x-small;
+    margin-left: 20px;
+  }
+
+  /* Add styling for other elements within .left-container */
+  .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3A5A40;
+    color: white;
+    text-align: center;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .left-links {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: 14px;
+  }
+
+  .link-header{
+    font-size: 14px;
+  }
+
+  .right-links {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 14px;
+  }
+
+
+  .icons-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10%;
+  }
+
+  .icons-container img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: transform 0.8 ease-in-out;
+    width: 40px;
+  }
+
+  .icons-container img:hover{
+    opacity: 25%;
+  }
+
+  .company-info {
+    /* Add styling for .company-info and its children */
+    margin-top: 50px;
+    margin-left: 10px;
+    transition: transform 0.8 ease-in-out;
+    font-size: 10px;
+  }
+
+  a.company-info{
+    font-size: 8px;
+  }
+
+  a:hover{
+    opacity: 25%;
+  }
+
+  .whole-container{
+    background-color: #fff;
+  }
+
+  .top-logo {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-logo img{
+    max-width: 40%;
+    height: auto;
+  }
+
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the left */
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .newsletter-header {
+    font-family: 'Krona One';
+    margin-top: 20%;
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .rounded-form{
+    display: flex;
+    align-items: center;
+    background-color: #FEFAE0;
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  .newsletter-input{
+    height: 30px;
+    width: 80%;
+    border-radius: 24px;
+    border: none;
+    background-color: #FEFAE0;
+  }
+
+  .newsletter-input:focus{
+    border-color: #FEFAE0;
+  }
+
+  .newsletter-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4a261;
+    border-radius: 24px;
+    height: 40px;
+    width: 40%;
+    padding: 10px;
+    border: #f4a261;
+    cursor: pointer;
+    transition: transform 2.5 ease-in-out;
+  }
+
+  .newsletter-submit:hover{
+    background-color: #ffaf6e;
+    border-radius: 24px;
+    height: 40px;
+    border: #ffaf6e;
+    cursor: pointer;
+  }
+
+  .policies{
+    margin-top: 20px;
+    font-size: 7px;
+  }
 }

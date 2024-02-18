@@ -5,6 +5,7 @@ import { SpecificClassComponent } from './pages/specific-class/specific-class.co
 import { ContactComponent } from './pages/contact/contact.component';
 import { BookNowComponent } from './pages/book-now/book-now.component';
 import { TeamComponent } from './pages/team/team.component';
+import { ServicesComponent } from './pages/services/services.component';
 
 export const routes: Routes = [
                                 { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ export const routes: Routes = [
                                 { path: 'specific-class/:id', component: SpecificClassComponent },
                                 { path: 'contact', component: ContactComponent },
                                 { path: 'book-now/:id', component: BookNowComponent },
-                                { path: 'services', component: BookNowComponent },
+                                { path: 'book', component: BookNowComponent },
                                 { path: 'team', component: TeamComponent },
+                                { path: 'services', component: ServicesComponent },
                                 ];

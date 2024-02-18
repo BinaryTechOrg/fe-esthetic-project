@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../common/header/header.component';
 import { FooterComponent } from '../../common/footer/footer.component';
-import { SliderImagesComponent } from './slider-images/slider-images.component';
+import { SliderImagesComponent } from '../../common/slider-images/slider-images.component';
 import { DescriptionAreaComponent } from './description-area/description-area.component';
 import { CoursesAreaComponent } from './courses-area/courses-area.component';
 import { ContactAreaComponent } from './contact-area/contact-area.component';

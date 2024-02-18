@@ -21,7 +21,8 @@ a{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 900px; /* Adjust to center vertically */
+  height: 500px;
+  margin-bottom: 100px; /* Adjust to center vertically */
 }
 
 .header {
@@ -62,7 +63,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 50%;
 }
 
@@ -81,6 +82,32 @@ img {
 
 .right {
   right: 10px;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EDEEC9;
+  width: 100%;
+  border-radius: 34px;
+  padding: 24px 0px;
+  margin: 24px;
+}
+
+h3.top-left{
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.full-desc{
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 /*
@@ -161,92 +188,3 @@ img {
   right: 10px;
 }
 */
-
-/* Add media query for smaller screens */
-@media screen and (max-width: 1016px) {
- /* carousel.component.css */
-a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3a5a40;
-  border-radius: 24px;
-  width: 70%;
-  height: auto;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #FEFAE0;
-  font-family: 'Krona One';
-  text-align: center;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px; /* Adjust to center vertically */
-}
-
-.header {
-  font-family: 'Krona One';
-  margin-bottom: 2%;
-}
-
-.carousel-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  margin-top: 7%;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-  filter: blur(5px); /* Initial blur for non-active items */
-  transform: scale(0.8); /* Initial scale for non-active items */
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.carousel-item.active {
-  filter: none; /* Remove blur for active item */
-  transform: scale(1.5); /* Remove scale for active item */
-  z-index: 1;
-
-}
-
-img {
-  width: 100%; /* Adjust the width of the images */
-  height: auto;
-  border-radius: 8px;
-}
-
-.bottom-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10%;
-  width: 85%;
-}
-
-.arrow {
-  font-size: 40px;
-  background-color: #FEFAE0;
-  border-radius: 50%;
-  cursor: pointer;
-  color: white;
-  width: 10%;
-}
-
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-}
