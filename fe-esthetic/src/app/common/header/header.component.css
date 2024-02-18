@@ -9,7 +9,6 @@
     background-color: #3A5A40;
     color: white;
     text-align: center;
-    height: 100px;
 }
 
 .logo-section{
@@ -52,10 +51,10 @@ a.special-button{
     color: #3A5A40 !important;
     width: 80%;
     height: 75%;
-    transition: 0.7 ease-in-out;
+    -o-transition:  0.7s ease-in-out;
     -webkit-transition:  0.7s ease-in-out;
     -moz-transition:  0.7s ease-in-out;
-    -o-transition:  0.7s ease-in-out;
+    transition: 0.7 ease-in-out;
   }
 
 a.special-button:hover{
@@ -67,8 +66,10 @@ a.special-button:hover{
     width: 25%;
 }
 
+/*
 @media screen{
     .logo-section{
 
     }
 }
+*/

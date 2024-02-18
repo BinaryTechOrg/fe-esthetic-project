@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UnderHeaderComponent } from './under-header.component';
+import { UnderHeaderContactComponent } from './under-header-contact.component';
 
 describe('UnderHeaderComponent', () => {
-  let component: UnderHeaderComponent;
-  let fixture: ComponentFixture<UnderHeaderComponent>;
+  let component: UnderHeaderContactComponent;
+  let fixture: ComponentFixture<UnderHeaderContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UnderHeaderComponent]
+      imports: [UnderHeaderContactComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(UnderHeaderComponent);
+
+    fixture = TestBed.createComponent(UnderHeaderContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

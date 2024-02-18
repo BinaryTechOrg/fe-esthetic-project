@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HeaderComponent } from '../../common/header/header.component';
 import { FooterComponent } from '../../common/footer/footer.component';
-import { UnderHeaderComponent } from '../../common/under-header/under-header.component';
+import { UnderHeaderContactComponent } from '../../common/under-header-contact/under-header-contact.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, HeaderComponent, FooterComponent, UnderHeaderComponent],
+  imports: [ReactiveFormsModule, HeaderComponent, FooterComponent, UnderHeaderContactComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
