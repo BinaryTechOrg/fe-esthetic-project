@@ -1,0 +1,7 @@
+[build]
+  command = "ng build --prod"
+  publish = "dist/fe-esthetic"
+
+[context.production]
+  command = "ng build --prod"
+  publish = "dist/fe-esthetic"
