@@ -45,7 +45,8 @@ p{
   -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
   -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
   -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  transition-duration: 1.5s;  min-height: 200px;
+  transition-duration: 1.5s;
+  min-height: 200px;
 }
 
 .carousel-item {
@@ -86,14 +87,6 @@ p{
   transition: background-color 0.3s ease; /* Ajout de la transition pour un effet fluide */
 }
 
-.left {
-
-}
-
-.right {
-
-}
-
 /* Centrer l'item actif dans le carousel */
 .carousel-item.active {
   transform: translateY(0);
@@ -126,11 +119,6 @@ p{
 @media screen and (max-width: 1016px) {
   /* carousel.component.css */
   .carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
     min-height: 300px;
     margin-bottom: 50px;
   }
@@ -139,99 +127,16 @@ p{
     font-size: 12px;
   }
 
-  .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
   .carousel-items {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    transition-duration: 1.5s;
     min-height: 300px;
   }
 
   .carousel-item {
-    text-align: center;
-    transform: scale(0.8); /* Initial scale for non-active items */
-    transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    transition-duration: 1.5s;
     min-height: 200px;
     width: 50%;
   }
 
-  .carousel-item:not(.active) {
-    filter: blur(2px);
-    transform: translateY(50%);
-    width: 20%;
-    transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    transition-duration: 1.5s;
-  }
-
   .bottom-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 60%;
-  }
-
-  .arrow {
-    font-size: 40px;
-    background: transparent;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.3s ease; /* Ajout de la transition pour un effet fluide */
-  }
-
-  .left {
-
-  }
-
-  .right {
-
-  }
-
-  /* Centrer l'item actif dans le carousel */
-  .carousel-item.active {
-    transform: translateY(0);
-    transform: scale(1.2);
-    transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-    transition-duration: 1.5s;
-  }
-
-  /* carousel.component.css */
-  /* ... */
-  .carousel-items.slide-left {
-    transform: translateX(-100%);
-  }
-
-  .carousel-items.slide-right {
-    transform: translateX(100%);
-  }
-
-  .text-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
