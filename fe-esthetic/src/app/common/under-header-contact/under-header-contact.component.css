@@ -63,3 +63,13 @@ hr{
 .color{
   color: #ADC178;
 }
+
+@media screen and (max-width: 576px){
+  h1{
+    font-size: 25px;
+  }
+
+  .under-header{
+    min-height: 180px;
+  }
+}

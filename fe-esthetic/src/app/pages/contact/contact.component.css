@@ -113,7 +113,7 @@ img:hover{
 .bottom-container{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 
 .bottom-left{
@@ -138,4 +138,45 @@ img.position{
 
 p.smaller{
   font-size: 9px;
+}
+
+
+
+@media screen and (max-width: 1016px){
+  .contact-container{
+    flex-direction: column;
+  }
+
+  .left-container{
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  p{
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .right-container{
+    align-items: center;
+    width: 100%;
+  }
+
+  .rounded-form{
+    width: 100%;
+  }
+
+  .bottom-container{
+    margin-bottom: 30px;
+  }
+
+  .rounded-submit{
+    height: 100px;
+    width: 100px;
+  }
+
+  p.smaller{
+    font-size: 8px;
+  }
 }
