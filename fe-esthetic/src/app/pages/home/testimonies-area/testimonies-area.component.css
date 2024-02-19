@@ -135,25 +135,7 @@ p{
     margin-bottom: 50px;
   }
 
-  h1{
-    font-family: 'Krona One';
-  }
-
-  h2{
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(72, 132, 83, 0.75);
-  }
-
-  h3{
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(72, 132, 83, 1);
-  }
-
   p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #ADC178;
-    text-shadow: 3px 3px 0px rgba(173, 193, 120, 0.4);
     font-size: 12px;
   }
 

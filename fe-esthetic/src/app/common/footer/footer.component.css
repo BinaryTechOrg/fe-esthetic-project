@@ -200,9 +200,6 @@ a:hover{
 
 /* Add media query for smaller screens */
 @media screen and (max-width: 1016px) {
-  label{
-    display: none;
-  }
 
   p{
     margin-top: 30px;
@@ -212,31 +209,11 @@ a:hover{
     font-size: 7px;
   }
 
-  h3{
-    font-family: 'Krona One';
-    font-size: 20px;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  img{
-    cursor: pointer;
-  }
-
-
   a{
-    text-decoration: none;
-    color: #FEFAE0;
-    font-family: 'Krona One';
     font-size: 8px;
   }
 
   a.privacy-link{
-    text-decoration: none;
-    color: #FEFAE0;
-    font-family: 'Krona One';
     font-size: 10px;
   }
 
@@ -246,22 +223,6 @@ a:hover{
     font-family: 'Krona One';
     font-size: x-small;
     margin-left: 20px;
-  }
-
-  /* Add styling for other elements within .left-container */
-  .bottom {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #3A5A40;
-    color: white;
-    text-align: center;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 3px 3px 0px 0px;
-    border-radius: 24px 24px 0px 0px;
   }
 
   .left-container {
@@ -343,18 +304,6 @@ a:hover{
 
   .whole-container{
     background-color: #fff;
-  }
-
-  .top-logo {
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center;
-    width: 100%;
-  }
-
-  .top-logo img{
-    max-width: 40%;
-    height: auto;
   }
 
   .newsletter-container {
