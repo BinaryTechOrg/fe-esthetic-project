@@ -92,3 +92,30 @@ img.second{
 .img-container-2{
   width: 45%;
 }
+
+@media screen and (max-width: 1016px){
+  .container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .desc,
+  .header,
+  .text-container,
+  .text-container-2{
+    width: 90%;
+    align-items: center;
+  }
+
+  .img-container-2{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .btn{
+    font-size: 12px;
+  }
+}
