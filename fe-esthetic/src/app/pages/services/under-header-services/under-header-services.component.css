@@ -87,6 +87,7 @@ hr{
 
 a.background{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #ADC178;
@@ -95,8 +96,23 @@ a.background{
   font-size: 12px;
   padding: 10px;
   transition: transform 0.7s ease-in-out;
+  margin: 10px;
 }
 
 a.background:hover{
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+  h1{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  a.background{
+    font-size: 6px;
+  }
 }

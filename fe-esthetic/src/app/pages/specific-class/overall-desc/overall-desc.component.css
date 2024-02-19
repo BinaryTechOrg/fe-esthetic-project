@@ -25,6 +25,13 @@ p{
   opacity: 85%;
 }
 
+.main-container{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .section-container{
   display: flex;
   flex-direction: row;
@@ -101,4 +108,35 @@ p{
 .desc{
   width: 60%;
   margin-left: 6%;
+}
+
+@media screen and (max-width: 576px) {
+  .section-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-container{
+    width: 90%;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  .right-container{
+    margin-top: 20px;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .item{
+    align-items: center;
+  }
+
+  .top-header,
+  .desc{
+    width: 90%;
+  }
 }

@@ -132,18 +132,12 @@ a.right-btn:hover{
   }
 
   p.unbolded{
-    display: flex;
-    justify-content: center;
-    font-family: 'Krona One';
     font-weight: 100;
     font-size: 15px;
     margin: 0;
   }
 
   p.bolded{
-    display: flex;
-    justify-content: center;
-    font-family: 'Krona One';
     font-weight: 800;
     font-size: 25px;
     margin: 0;
@@ -164,52 +158,22 @@ a.right-btn:hover{
     justify-content: flex-start;
     width: 90%;
   }
+}
 
-  a.left-btn{
-    display: flex;
-    justify-content: center;
-    border: 3px;
-    border-style: solid;
-    border-color: #ADC178;
-    background-color: #ADC178;
-    text-decoration: none;
-    border-radius: 24px;
-    padding: 6px;
-    margin: 12px;
-    width: 50%;
-    color: #FEFAE0;
-    font-family: 'Open Sans', sans-serif;
-    transition: 0.7s ease-in-out;
-    -webkit-transition:  0.7s ease-in-out;
-    -moz-transition:  0.7s ease-in-out;
-    -o-transition:  0.7s ease-in-out;
+@media screen and (max-width: 576px) {
+  p.bolded{
+    font-size: 18px;
   }
 
-  a.right-btn{
-    display: flex;
-    justify-content: center;
-    border: 3px;
-    border-style: solid;
-    border-color: #ADC178;
-    text-decoration: none;
-    border-radius: 24px;
-    padding: 6px;
-    margin: 12px;
-    width: 50%;
-    color: #FEFAE0;
-    font-family: 'Open Sans', sans-serif;
-    transition: 0.7 ease-in-out;
-    -webkit-transition:  0.7s ease-in-out;
-    -moz-transition:  0.7s ease-in-out;
-    -o-transition:  0.7s ease-in-out;
+  p.unbolded{
+    font-size: 14px;
   }
 
-  a.left-btn:hover{
-    transform: scale(110%);
+  .button-section{
+    font-size: 10px;
   }
 
-  a.right-btn:hover{
-    transform: scale(110%);
-    background-color: #ADC178;
+  .contact-desc{
+    text-align: center;
   }
 }

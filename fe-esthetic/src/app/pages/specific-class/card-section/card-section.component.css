@@ -72,3 +72,38 @@ a{
 .btn:hover{
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 1016px){
+  a{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 764px){
+  a{
+    font-size: 11px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  p{
+    font-size: 14px;
+  }
+
+  .btn{
+    width: 60%;
+  }
+
+  .card-section{
+    flex-direction: column;
+  }
+
+  .right-container{
+    width: 100%;
+  }
+}

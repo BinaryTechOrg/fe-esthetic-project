@@ -286,14 +286,6 @@ a:hover{
     opacity: 25%;
   }
 
-  .company-info {
-    /* Add styling for .company-info and its children */
-    margin-top: 50px;
-    margin-left: 10px;
-    transition: transform 0.8 ease-in-out;
-    font-size: 10px;
-  }
-
   a.company-info{
     font-size: 8px;
   }
@@ -327,5 +319,27 @@ a:hover{
   .policies{
     margin-top: 20px;
     font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .link-header{
+    font-size: 10px;
+  }
+
+  a.privacy-link{
+    font-size: 8px;
+  }
+
+  a.cookie-link{
+    font-size: 8px;
+  }
+
+  .newsletter-header{
+    font-size: 8px;
+  }
+
+  .right-container{
+    margin-top: 20px;
   }
 }

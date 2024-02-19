@@ -16,3 +16,19 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1016px) {
+  h2{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2{
+    font-size: 12px;
+  }
+
+  .top{
+    min-height: 150px;
+  }
+}

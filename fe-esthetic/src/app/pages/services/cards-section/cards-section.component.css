@@ -60,3 +60,27 @@ a{
   width: 45%;
   border-radius: 24px;
 }
+
+@media screen and (max-width: 576px) {
+  .row-items{
+    width: 100%;
+    min-height: 160px;
+  }
+
+  .first-row{
+    font-size: 11px;
+  }
+
+  .second-row{
+    font-size: 12px;
+  }
+
+  .third-row{
+    font-size: 12px;
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
