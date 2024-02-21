@@ -83,85 +83,6 @@ img {
   right: 10px;
 }
 
-/*
-.carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 700px;
-}
-
-.header {
-  font-family: 'Krona One';
-  margin-bottom: 2%;
-}
-
-.carousel-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  position: relative;
-  transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  transition-duration: 1.5s;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-  filter: blur(5px);
-  transform: scale(0.8) translateX(-50%);
-  transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -webkit-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -moz-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  -o-transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-  transition-duration: 1.5s;
-}
-
-.carousel-item.active {
-  position: absolute;
-  filter: none;
-  transform: scale(1.5);
-  z-index: 1;
-  transform-origin: center center;
-  transition: transform 0.7s ease-in-out, filter 0.5s ease-in-out;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.arrow {
-  font-size: 24px;
-  background: transparent;
-  border: none;
-  background-color: #3a5a40;
-  border-radius: 50%;
-  width: 10%;
-  height: auto;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-}
-
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-*/
-
 /* Add media query for smaller screens */
 @media screen and (max-width: 1016px) {
  /* carousel.component.css */
@@ -183,6 +104,7 @@ a{
 }
 
 .carousel {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,8 +141,8 @@ a{
 }
 
 img {
-  width: 100%; /* Adjust the width of the images */
-  height: auto;
+  width: auto; /* Adjust the width of the images */
+  height: 150px;
   border-radius: 8px;
 }
 
@@ -249,4 +171,15 @@ img {
 .right {
   right: 10px;
 }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel{
+    margin-top: 10px !important;
+  }
+
+  img{
+    height: 80px;
+    width: auto;
+  }
 }

@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CarouselComponent {
   @Input() items: any[] = [];
-  activeIndex: number = 0;
+  activeIndex: number = 2;
 
   next() {
     this.activeIndex = (this.activeIndex + 1) % this.items.length;

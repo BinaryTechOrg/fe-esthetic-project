@@ -35,7 +35,6 @@ export class HomeComponent {
     { id: 3, imageUrl: 'assets/img/services/service-3.jpg', title: 'test3' },
     { id: 4, imageUrl: 'assets/img/services/service-4.jpg', title: 'test4' },
     { id: 5, imageUrl: 'assets/img/services/service-5.jpg', title: 'test5' },
-    { id: 6, imageUrl: 'assets/img/services/service-6.jpg', title: 'test6' },
     // Add more items as needed
   ];
 
