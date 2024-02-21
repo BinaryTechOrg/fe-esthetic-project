@@ -84,3 +84,15 @@ a.special-button:hover{
     margin-right: 10px;
   }
 }
+
+@media screen and (max-width: 1219px) {
+  a.special-button{
+    width: 100px !important;
+  }
+
+  .logo-section{
+    display: flex;
+    transform: scale(0.35);
+    width: 15%;
+}
+}

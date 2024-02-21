@@ -1,6 +1,8 @@
 h4{
   color: #4c7b54;
   font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 p{
@@ -98,6 +100,8 @@ img.second{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .desc,
@@ -105,12 +109,27 @@ img.second{
   .text-container,
   .text-container-2{
     width: 90%;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .img-container-2{
     display: flex;
     justify-content: flex-end;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  .btn{
+    width: auto;
+  }
+
+  .img-container-2,
+  .img-container{
+    justify-content: center;
+    margin-top: 50px;
   }
 }
 
