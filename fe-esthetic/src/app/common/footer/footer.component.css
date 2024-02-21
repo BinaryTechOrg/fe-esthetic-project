@@ -142,7 +142,6 @@ a:hover{
 }
 
 .top-logo img{
-  max-width: 40%;
   height: auto;
 }
 
@@ -341,5 +340,12 @@ a:hover{
 
   .right-container{
     margin-top: 20px;
+  }
+
+  .logo{
+    object-fit: cover;
+    overflow: hidden;
+    width: 200px;
+    height: auto;
   }
 }

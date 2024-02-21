@@ -15,6 +15,7 @@
     display: flex;
     transform: scale(0.5);
     width: 25%;
+    margin-bottom: 5px;
 }
 
 .text-section{

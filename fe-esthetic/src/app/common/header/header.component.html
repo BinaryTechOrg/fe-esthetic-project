@@ -9,7 +9,7 @@
         <a class="normal-button" href="/contact">CONTACT</a>
         <a class="special-button" href="/book">BOOK NOW</a>
     </div>
-    <div *ngIf="isMobile" class="text-section">
+    <div *ngIf="isMobile === true" class="text-section">
       <a class="special-button" href="/book">BOOK NOW</a>
       <img class="burger" src="assets/img/header/menu.svg" alt="" (click)="toggleMobileMenu()">
   </div>
