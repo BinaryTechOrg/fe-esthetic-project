@@ -1,11 +1,11 @@
-import { Component, ComponentFactoryResolver, ComponentRef, HostListener, NgZone, OnInit, ViewContainerRef } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { ChangeDetectorRef, Component, ComponentFactoryResolver, ComponentRef, HostListener, NgZone, OnInit, ViewContainerRef } from '@angular/core';
+import { NgClass, NgIf, NgStyle } from '@angular/common';
 import { SidebarmenuComponent } from '../sidebarmenu/sidebarmenu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgStyle, NgClass],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -13,7 +13,10 @@ export class HeaderComponent {
   isMobile = false;
   sidebarRef: ComponentRef<SidebarmenuComponent> | null = null;
 
-  constructor(private resolver: ComponentFactoryResolver, private viewContainerRef: ViewContainerRef, private ngZone: NgZone
+  constructor(private resolver: ComponentFactoryResolver,
+     private viewContainerRef: ViewContainerRef,
+      private ngZone: NgZone,
+      private cdRef: ChangeDetectorRef
     ) {}
 
   ngOnInit() {
@@ -24,7 +27,7 @@ export class HeaderComponent {
     if (typeof window !== 'undefined') {
       this.isMobile = window.innerWidth < 1220;
       this.ngZone.run(() => {}); // Run change detection
-      console.log("boo") // Adjust the threshold as needed
+      this.cdRef.detectChanges(); // Manually trigger change detection
     }
     console.log(this.isMobile)
   }

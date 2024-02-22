@@ -2,15 +2,15 @@
     <div class="logo-section">
         <img style="cursor: pointer;" src="assets/img/logo/logo-black.png" alt="">
     </div>
-    <div *ngIf="!isMobile" class="text-section">
+    <div class="text-section" [ngClass]="{ 'hide-on-desktop': isMobile }">
         <a class="normal-button" href="/">HOME</a>
         <a class="normal-button" href="/classes">CLASSES</a>
         <a class="normal-button" href="services">SERVICES</a>
         <a class="normal-button" href="/contact">CONTACT</a>
         <a class="special-button" href="/book">BOOK NOW</a>
     </div>
-    <div *ngIf="isMobile === true" class="text-section">
-      <a class="special-button" href="/book">BOOK NOW</a>
+    <div class="text-section" [ngClass]="{ 'hide-on-desktop': !isMobile }">
+          <a class="special-button" href="/book">BOOK NOW</a>
       <img class="burger" src="assets/img/header/menu.svg" alt="" (click)="toggleMobileMenu()">
   </div>
 </div>
