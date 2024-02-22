@@ -137,4 +137,8 @@ img.second{
   .btn{
     font-size: 12px;
   }
+
+  .img-container{
+    margin-bottom: 40px;
+  }
 }
