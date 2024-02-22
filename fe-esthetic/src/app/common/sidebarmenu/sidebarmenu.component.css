@@ -33,9 +33,19 @@ p{
   background-color: #3A5A40;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   transition: transform 0.3s ease-out; /* Add smooth transition */
   z-index: 9999;
+}
+
+.close{
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out;
+}
+
+.close:hover{
+  transform: scale(1.2);
 }
 
 .left {

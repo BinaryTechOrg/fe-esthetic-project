@@ -4,6 +4,7 @@ import { FooterComponent } from '../../common/footer/footer.component';
 import { PhilosophySectionComponent } from './philosophy-section/philosophy-section.component';
 import { CardSectionComponent } from './card-section/card-section.component';
 import { OverallDescComponent } from './overall-desc/overall-desc.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-specific-class',
@@ -13,5 +14,7 @@ import { OverallDescComponent } from './overall-desc/overall-desc.component';
   styleUrl: './specific-class.component.css'
 })
 export class SpecificClassComponent {
-
+  constructor(private titleService: Title){
+    this.titleService.setTitle('Specifics');
+  }
 }

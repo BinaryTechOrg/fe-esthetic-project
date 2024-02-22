@@ -6,6 +6,7 @@ import { CarouselComponent } from '../../common/carousel/carousel.component';
 import { CarouselServicesComponent } from './carousel-services/carousel-services.component';
 import { DescriptionAreaComponent } from '../home/description-area/description-area.component';
 import { CardsSectionComponent } from './cards-section/cards-section.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-services',
@@ -15,6 +16,10 @@ import { CardsSectionComponent } from './cards-section/cards-section.component';
   styleUrl: './services.component.css'
 })
 export class ServicesComponent {
+  constructor(private titleService: Title){
+    this.titleService.setTitle('Services');
+  }
+
   carouselItems = [
     { id: 1, imageUrl: 'assets/img/services/service-1.jpg', title: 'Laser' },
     { id: 2, imageUrl: 'assets/img/services/service-2.jpg', title: 'test2' },

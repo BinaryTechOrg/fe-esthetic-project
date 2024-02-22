@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { HeaderComponent } from '../../common/header/header.component';
 import { FooterComponent } from '../../common/footer/footer.component';
 import { UnderHeaderContactComponent } from '../../common/under-header-contact/under-header-contact.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,8 @@ import { UnderHeaderContactComponent } from '../../common/under-header-contact/u
 export class ContactComponent {
   myForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private titleService: Title) {
+    this.titleService.setTitle('Contact us');
     this.myForm = this.fb.group({
       userName: ['', Validators.required]
     });

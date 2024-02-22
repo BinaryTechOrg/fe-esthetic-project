@@ -7,6 +7,7 @@ import { CoursesAreaComponent } from './courses-area/courses-area.component';
 import { ContactAreaComponent } from './contact-area/contact-area.component';
 import { TestimoniesAreaComponent } from './testimonies-area/testimonies-area.component';
 import { CarouselComponent } from '../../common/carousel/carousel.component';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,10 @@ import { CarouselComponent } from '../../common/carousel/carousel.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(private titleService:Title) {
+    this.titleService.setTitle("HOME");
+  }
+
   topSlider = [
     {id: 1, img: 'assets/img/home/home-1.jpg'},
     {id: 2, img: 'assets/img/home/home-2.jpg'},
