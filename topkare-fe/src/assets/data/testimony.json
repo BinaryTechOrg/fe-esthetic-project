@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "../../../assets/img/home/home-1.jpg",
+    "service": "Nails",
+    "desc": "Topkare's nail services are truly exceptional! The attention to detail and expertise provided by Leah Laluz exceeded my expectations. My nails have never looked better! Thank you, Topkare!",
+    "name": "Sophia Johnson"
+  },
+  {
+    "id": 2,
+    "img": "../../../assets/img/home/home-2.jpg",
+    "service": "Lashes",
+    "desc": "I had the most amazing experience with Topkare's lash services. Leah Laluz is an absolute master at her craft! My lashes look so natural yet glamorous. I feel like a whole new person. Highly recommend!",
+    "name": "Emma Thompson"
+  },
+  {
+    "id": 3,
+    "service": "Laser",
+    "img": "../../../assets/img/home/home-3.jpg",
+    "desc": "I am beyond impressed with Topkare's laser treatments. Leah Laluz made me feel comfortable throughout the entire process. The results are incredible - smoother skin with no signs of pigmentation. Thank you for boosting my confidence!",
+    "name": "Michael Chen"
+  },
+  {
+    "id": 4,
+    "img": "../../../assets/img/services/service-1.jpg",
+    "service": "Nails",
+    "desc": "Leah Laluz at Topkare is a nail genius! Her attention to detail and creativity surpassed all my expectations. I left the salon feeling like royalty with my beautifully designed nails. Thank you for the exceptional service!",
+    "name": "Ava Martinez"
+  },
+  {
+    "id": 5,
+    "img": "../../../assets/img/services/service-2.jpg",
+    "service": "Lashes",
+    "desc": "Topkare's lash services are top-notch! Leah Laluz has a true talent for enhancing natural beauty with her lash extensions. I couldn't be happier with the results. Thank you for giving me the confidence to flutter my lashes!",
+    "name": "Olivia White"
+  },
+  {
+    "id": 6,
+    "img": "../../../assets/img/services/service-3.jpg",
+    "service": "Nails",
+    "desc": "I recently had my nails done at Topkare, and I'm amazed by the quality of service! Leah Laluz is a nail wizard. The attention to detail and the variety of designs offered are exceptional. I'll definitely be back for more!",
+    "name": "Daniel Kim"
+  }
+]

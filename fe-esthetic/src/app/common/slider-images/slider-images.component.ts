@@ -3,8 +3,6 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slider-images',
-  standalone: true,
-  imports: [NgClass, NgFor, NgIf],
   templateUrl: './slider-images.component.html',
   styleUrl: './slider-images.component.css'
 })

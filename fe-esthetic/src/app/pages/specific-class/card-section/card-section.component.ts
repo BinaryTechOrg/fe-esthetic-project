@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-section',
-  standalone: true,
-  imports: [],
   templateUrl: './card-section.component.html',
   styleUrl: './card-section.component.css'
 })
 export class CardSectionComponent {
+  @Input() items: any[] = [];
 
 }

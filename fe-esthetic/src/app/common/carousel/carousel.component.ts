@@ -4,8 +4,6 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
-  standalone: true,
-  imports: [NgFor, NgClass, NgIf],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })

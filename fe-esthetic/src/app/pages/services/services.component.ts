@@ -7,11 +7,10 @@ import { CarouselServicesComponent } from './carousel-services/carousel-services
 import { DescriptionAreaComponent } from '../home/description-area/description-area.component';
 import { CardsSectionComponent } from './cards-section/cards-section.component';
 import { Title } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-services',
-  standalone: true,
-  imports: [HeaderComponent, UnderHeaderServicesComponent, DescriptionAreaComponent, CarouselServicesComponent, CardsSectionComponent, FooterComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })

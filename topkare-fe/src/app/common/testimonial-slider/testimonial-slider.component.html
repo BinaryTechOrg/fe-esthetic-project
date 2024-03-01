@@ -1,0 +1,72 @@
+<!--
+<section class="container">
+  <div class="testimonial">
+    <div class="testi-content">
+      <div class="slide">
+        <img src="assets/img/home/home-1.jpg" alt="" class="image">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nihil, maxime ex natus hic maiores iusto modi nisi quasi quae et laborum quis omnis excepturi delectus dolorem debitis corporis molestiae!</p>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+        <div class="details">
+          <span class="name">Marnie Lotter</span>
+          <span class="job">Lashes Specialist</span>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="indicator" class="carousel-dot-container">
+      <span *ngFor="let dot of items; let i = index"
+            class="dot"
+            [ngClass]="{'active' : selectedIndex === i}"
+            (click)="selectImg(i)"
+      >
+      </span>
+    </div>
+  </div>
+</section>
+-->
+<div *ngIf="testimonies && testimonies.length > 0" class="carousel-container">
+  <section class="container">
+    <div class="testimonial">
+      <div class="testi-content">
+        <div class="slide">
+          <img *ngFor="let item of testimonies; let i = index"
+               [ngClass]="{'image-active' : selectedIndex === i}"
+                [src]="item.img" alt=""
+                class="fade image">
+          <p *ngFor="let item of testimonies; let i = index"
+          [ngClass]="{'image-active' : selectedIndex === i}"
+           class="fade image">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nihil, maxime ex natus hic maiores iusto modi nisi quasi quae et laborum quis omnis excepturi delectus dolorem debitis corporis molestiae!</p>
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Marnie Lotter</span>
+            <span class="job">Lashes Specialist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div *ngIf="indicator" class="carousel-dot-container">
+    <span *ngFor="let dot of testimonies; let i = index"
+          class="dot"
+          [ngClass]="{'active' : selectedIndex === i}"
+          (click)="selectImg(i)"
+    >
+    </span>
+  </div>
+
+  <div *ngIf="controls" class="btn-carousel btn-prev">
+    <i class="fas fa-solid fa-circle-chevron-left icon-carousel icon-prev"
+      (click)="onPrev()"
+    >
+    </i>
+  </div>
+
+  <div class="btn-carousel btn-next">
+    <i class="fas fa-solid fa-circle-chevron-right icon-carousel icon-next"
+    (click)="onNext()"
+    >
+    </i>
+  </div>
+
+</div>

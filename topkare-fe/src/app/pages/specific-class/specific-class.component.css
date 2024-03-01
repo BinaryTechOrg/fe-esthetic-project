@@ -1,0 +1,39 @@
+h2{
+  font-family: 'Krona One';
+  text-align: end;
+  font-size: 32px;
+  position: absolute;
+}
+
+img{
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 300px;
+}
+
+.top{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1016px) {
+  h2{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2{
+    font-size: 12px;
+  }
+
+  .top{
+    min-height: 150px;
+  }
+}

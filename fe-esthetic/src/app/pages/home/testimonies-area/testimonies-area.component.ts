@@ -1,10 +1,9 @@
 import { NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-testimonies-area',
-  standalone: true,
-  imports: [NgFor, NgClass, NgIf, NgStyle],
   templateUrl: './testimonies-area.component.html',
   styleUrl: './testimonies-area.component.css'
 })

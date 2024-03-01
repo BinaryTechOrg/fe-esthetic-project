@@ -8,18 +8,10 @@ import { ContactAreaComponent } from './contact-area/contact-area.component';
 import { TestimoniesAreaComponent } from './testimonies-area/testimonies-area.component';
 import { CarouselComponent } from '../../common/carousel/carousel.component';
 import {Title} from "@angular/platform-browser";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [HeaderComponent,
-            SliderImagesComponent,
-            DescriptionAreaComponent,
-            CoursesAreaComponent,
-            ContactAreaComponent,
-            CarouselComponent,
-            TestimoniesAreaComponent,
-            FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
