@@ -44,6 +44,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TestimonialSliderComponent } from './common/testimonial-slider/testimonial-slider.component';
 import { LoadingInterceptor } from './Interceptor/loading.interceptor';
 import { LoaderService } from './Services/LoaderService/loader.service';
+import { DescriptionServicesComponent } from './pages/services/description-services/description-services.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { LoaderService } from './Services/LoaderService/loader.service';
     OverallDescComponent,
     TeamComponent,
     TestimonialSliderComponent,
+    DescriptionServicesComponent,
     ],
   imports: [
     BrowserModule,

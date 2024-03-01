@@ -1,3 +1,7 @@
+h1{
+  font-family: 'Krona One' !important;
+}
+
 .courses-container{
   display: flex;
   flex-direction: column;
@@ -12,7 +16,6 @@
   align-self: flex-start;
   margin-left: 6%;
   margin-top: 2%;
-  font-family: 'Krona One';
 }
 
 .color-change{
@@ -39,8 +42,8 @@
 
 .top-img{
   margin-top: 20px;
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
 }
 
