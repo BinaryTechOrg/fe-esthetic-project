@@ -28,21 +28,15 @@ export class ServicesComponent {
   ) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      const id = params.get('id');
-      if (id) {
-        this.serviceId = parseInt(id, 10); // Convert string parameter to a number
-        this.dataService.getCourseById(this.serviceId).subscribe({
-          next: (data) => {
-            this.itemData = data;
-           },
-          error: (error) => {
-             console.error('Error fetching course data:', error);
-            }
-        });
-
-      }
-    });
+      this.dataService.getServices().subscribe({
+        next: (data) => {
+          this.itemData = data;
+          console.log(data)
+          },
+        error: (error) => {
+            console.error('Error fetching course data:', error);
+          }
+      });
   }
 }
 

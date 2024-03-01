@@ -14,8 +14,8 @@
     <div class="bottom-section" *ngIf="items[activeIndex]">
       <img src="assets/img/home/carousel/testimony-arrow-left.svg" alt="" (click)="prev();" class="arrow left"/>
       <div class="desc">
-        <h3 class="top-left">LASHES</h3>
-        <p class="full-desc">We offer a lash service to give you the look you have always dreamed of and we make sure that all your refills and aesthetic preferences are saved inyour client file for a seamless and perfect service</p>
+        <h3 class="top-left">{{ items[activeIndex].title }}</h3>
+        <p class="full-desc">{{ items[activeIndex].desc }}</p>
       </div>
       <!--<a href="">Learn More About {{ items[activeIndex].title }}</a>-->
       <img src="assets/img/home/carousel/testimony-arrow-right.svg" alt="" (click)="next();" class="arrow right"/>

@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CarouselServicesComponent {
   @Input() items: any[] = [];
-  activeIndex: number = 2;
+  activeIndex: number = 1;
 
   next() {
     this.activeIndex = (this.activeIndex + 1) % this.items.length;

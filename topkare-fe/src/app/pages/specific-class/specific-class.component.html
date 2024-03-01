@@ -1,6 +1,7 @@
 <app-header></app-header>
-<div class="top">
-  <img [src]="itemData.img" alt="">
+<div [style.background-image]="'url(' + itemData.img + ')'"
+      class="top"
+>
   <h2>You're Happy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> We're Happy</h2>
 </div>
 <app-philosophy-section [item]="itemData"></app-philosophy-section>

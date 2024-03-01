@@ -26,8 +26,8 @@
         "desc": "In the initial phase, we work closely with you to understand your business needs, objectives, and knowledge gaps. Through interactive workshops, we align on the project scope, discuss the business context, and gather enough input so we can help you define your goals and create the winning strategy."
       }
       ],
-    "img": "specific-class/lashes"
-  },
+      "img": "../../../assets/img/home/home-1.jpg"
+    },
   {
     "id": 2,
     "service": "NAILS",
@@ -86,6 +86,6 @@
       }
       ],
     "mainImg": "",
-    "img": "specific-class/laser"
+    "img": "../../../assets/img/home/home-1.jpg"
   }
 ]
