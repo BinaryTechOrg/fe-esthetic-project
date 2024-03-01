@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'specific-class/:id', component: SpecificClassComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'specific-service/:id', component: BookNowComponent },
-  { path: 'book', component: BookNowComponent },
+  //{ path: 'book', component: BookNowComponent },
   { path: 'team', component: TeamComponent },
   { path: 'services', component: ServicesComponent },
   ];

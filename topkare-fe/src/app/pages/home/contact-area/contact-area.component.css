@@ -152,7 +152,7 @@ a.right-btn:hover{
   .contact-desc{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 80%;
     color: #FEFAE0;
     opacity: 80%;
     font-size: 20px;
@@ -181,5 +181,11 @@ a.right-btn:hover{
 
   .contact-desc{
     text-align: center;
+  }
+}
+
+@media screen and(max-width: 499px) {
+  p{
+    font-size: 10px;
   }
 }

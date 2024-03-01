@@ -198,3 +198,17 @@ img {
     width: auto;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .carousel-item.active{
+    transform: scale(1.2);
+  }
+
+  .arrow{
+    width: 15%;
+  }
+
+  a{
+    width: 50%;
+  }
+}

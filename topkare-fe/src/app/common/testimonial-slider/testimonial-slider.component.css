@@ -245,3 +245,17 @@ img{
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .carousel-container{
+    width: 80%;
+  }
+
+  .testimonial .slide{
+    row-gap: 40px;
+  }
+
+  .slide .quote-icon{
+    margin-top: 95px;
+  }
+}
