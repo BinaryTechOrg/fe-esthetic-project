@@ -2,7 +2,7 @@
   <ng-container *ngFor="let item of courses; let last = last">
     <div class="course-card" *ngIf="!last">
       <div class="card-header">
-        <h2>Course {{ item.id }}</h2>
+        <h2>{{ item.name }} Course</h2>
       </div>
       <div class="course-desc">
         <p>{{ item.smallDesc }}</p>
@@ -18,7 +18,7 @@
     </div>
     <div *ngIf="last" class="course-card-last">
       <div class="card-header">
-        <h2>Course {{ item.id }}</h2>
+        <h2>{{ item.name }} Course</h2>
       </div>
       <div class="course-desc">
         <p>{{ item.smallDesc }}</p>

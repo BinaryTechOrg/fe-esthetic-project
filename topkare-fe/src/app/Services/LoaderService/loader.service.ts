@@ -1,24 +1,32 @@
 // loading.service.ts
 import { Injectable } from '@angular/core';
+import { NavigationStart, NavigationEnd, Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class LoaderService {
-  private loadingRequests = 0;
-  public isLoading: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private _isLoading = new BehaviorSubject<boolean>(false);
+  public readonly isLoading = this._isLoading.asObservable();
 
-  public startLoading() {
-    this.loadingRequests++;
-    this.isLoading.next(true);
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        this.startLoading();
+      } else if (event instanceof NavigationEnd) {
+        this.stopLoading();
+      }
+      // Consider other Router events like NavigationCancel and NavigationError
+    });
   }
 
-  public stopLoading() {
-    this.loadingRequests--;
-    if (this.loadingRequests <= 0) {
-      this.loadingRequests = 0; // Ensure it doesn't go negative.
-      this.isLoading.next(false);
-    }
+  startLoading() {
+    this._isLoading.next(true);
+  }
+
+  // In your LoaderService or component
+  stopLoading() {
+    setTimeout(() => this._isLoading.next(false), 1000); // Delay stopping the loader
   }
 }

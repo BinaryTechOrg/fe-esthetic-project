@@ -39,8 +39,12 @@
           <i class="fa-solid fa-quote-left quote-icon"></i>
 
           <div class="details">
-            <span class="name">Marnie Lotter</span>
-            <span class="job">Lashes Specialist</span>
+            <span *ngFor="let item of testimonies; let i = index"
+            [ngClass]="{'image-active' : selectedIndex === i}"
+             class="fade name" >Marnie Lotter</span>
+            <span *ngFor="let item of testimonies; let i = index"
+            [ngClass]="{'image-active' : selectedIndex === i}"
+             class="fade job">Lashes Specialist</span>
           </div>
         </div>
       </div>

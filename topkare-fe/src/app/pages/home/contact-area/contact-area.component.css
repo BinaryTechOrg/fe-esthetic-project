@@ -106,9 +106,15 @@ a.right-btn:hover{
 
 /* Add media query for smaller screens */
 @media screen and (max-width: 1016px) {
+  p{
+    font-size: 14px;
+  }
+
   .section-container{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   .contact-container{

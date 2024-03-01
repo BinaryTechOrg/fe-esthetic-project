@@ -8,6 +8,7 @@ a{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   transition: transform 0.6s ease-in-out;
+  text-align: center;
 }
 
 a:hover{
@@ -79,11 +80,6 @@ p.desc-text{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     transition: transform 0.8 ease-in-out;
-  }
-
-  a:hover{
-    opacity: 85%;
-    color: black;
   }
 
   h3{

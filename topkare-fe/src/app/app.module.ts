@@ -4,7 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoaderComponent } from './common/loader/loader.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgIf, NgStyle } from '@angular/common';
@@ -42,6 +42,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgbCarousel, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TestimonialSliderComponent } from './common/testimonial-slider/testimonial-slider.component';
+import { LoadingInterceptor } from './Interceptor/loading.interceptor';
+import { LoaderService } from './Services/LoaderService/loader.service';
 
 @NgModule({
   declarations: [
@@ -97,7 +99,8 @@ import { TestimonialSliderComponent } from './common/testimonial-slider/testimon
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    LoaderService
   ],
   bootstrap: [AppComponent]
 })

@@ -105,7 +105,7 @@ a{
   align-items: center;
   background-color: #3a5a40;
   border-radius: 24px;
-  width: 70%;
+  width: 40%;
   height: auto;
   padding: 10px;
   text-decoration: none;
@@ -114,6 +114,10 @@ a{
   font-family: 'Krona One';
   text-align: center;
   overflow: hidden;
+}
+
+a:hover{
+  transform: scale(1.2);
 }
 
 .carousel {
@@ -155,25 +159,24 @@ a{
 
 img {
   width: auto; /* Adjust the width of the images */
-  height: 150px;
+  height: 150px !important;
   border-radius: 8px;
 }
 
 .bottom-section{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 10%;
   width: 85%;
 }
 
 .arrow {
-  font-size: 40px;
+  font-size: 10px;
   border-radius: 50%;
   cursor: pointer;
   color: white;
-  width: 10%;
 }
 
 .left {

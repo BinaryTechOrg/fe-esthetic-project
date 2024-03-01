@@ -35,13 +35,12 @@
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  color: #333;
-
+  color: #FEFAE0;
 }
 
 .slide .quote-icon{
   font-size: 30px;
-  color: #000;
+  color: #FEFAE0;
 }
 
 .slide .details{
@@ -53,13 +52,13 @@
 .details .name{
   font-size: 14px;
   font-weight: 600;
-  color: #333;
+  color: #FEFAE0;
 }
 
 .details .job{
   font-size: 14px;
   font-weight: 400;
-  color: #333;
+  color: #FEFAE0;
 }
 
 /*   SLIDER CSS               */
@@ -72,7 +71,7 @@
   box-shadow: 0 6px 12px #dce1e1;
   margin-bottom: 40px;
   border-radius: 24px;
-  background-color: #e0e8ca;
+  background-color: #3A5A40;
 }
 
 img{
@@ -89,8 +88,16 @@ img{
 
 .carousel-container p.image-active{
   display: block;
-  height: 60px;
+  height: 20px;
   width: 60%;
+  animation-name: slideIn;
+  transition: 0.5s ease;
+}
+
+.carousel-container span.image-active{
+  display: block;
+  height: 20px;
+  width: 100%;
   animation-name: slideIn;
   transition: 0.5s ease;
 }
@@ -100,6 +107,10 @@ img{
 }
 
 .carousel-container p{
+  display: none;
+}
+
+.carousel-container span{
   display: none;
 }
 
@@ -119,7 +130,7 @@ img{
   height: 13px;
   width: 13px;
   margin: 0 5px;
-  background-color: #000;
+  background-color: #FEFAE0;
   border-radius: 50%;
   display: inline-block;
   transition: opacity 0.6s ease;
@@ -192,7 +203,7 @@ img{
 }
 
 .icon-carousel{
-  color: #000;
+  color: #FEFAE0;
   opacity: 0.5;
   transition: all 0.15s ease;
 }
@@ -205,10 +216,32 @@ img{
   opacity: 0.5;
 }
 
-.icon-prev{
+.icon-prev,
+.icon-next{
   font-size: 45px;
 }
 
-.icon-next{
-  font-size: 45px;
+@media screen and (max-width: 1100px){
+  .testimonial .image{
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial .slide{
+    row-gap: 50px;
+  }
+
+  .slide p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 788px){
+  .testimonial .slide{
+    row-gap: 70px;
+  }
+
+  .slide .quote-icon{
+    margin-top: 20px;
+  }
 }
