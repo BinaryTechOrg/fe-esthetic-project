@@ -141,3 +141,21 @@ h3.top-left {
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 499px) {
+  img{
+    height: 150px;
+  }
+
+  .desc{
+    margin: 5px;
+  }
+
+  .bottom-section{
+    width: 100%;
+  }
+
+  .carousel-item.active{
+    transform: scale(1.2);
+  }
+}

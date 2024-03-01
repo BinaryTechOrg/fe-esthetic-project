@@ -89,10 +89,13 @@ a{
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 610px) {
+  a{
+    font-size: 16px;
+  }
 
   p{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .btn{
@@ -105,5 +108,11 @@ a{
 
   .right-container{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .card-section{
+    height: 300px;
   }
 }
