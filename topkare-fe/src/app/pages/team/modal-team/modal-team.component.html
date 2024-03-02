@@ -1,21 +1,30 @@
 <div class="modal-overlay">
   <div class="modal-content">
     <div class="left">
-      <h1>{{ data.name }}<br> {{ data.firstName }}</h1>
-      <h4>{{ data.location }}<span class="fade">{{ data.position }}</span></h4>
+      <div class="name">
+        <h1>{{ data.name }}<br> {{ data.firstName }}</h1>
+      </div>
+      <div class="location">
+        <h4>{{ data.location }}<span class="fade">{{ data.position }}</span></h4>
+      </div>
+      <div class="content">
       <p>{{ data.content }}</p>
+      </div>
       <div class="facts">
-        <p>{{ data.funFact1 }}</p>
-        <p>{{ data.funFact2 }}</p>
+        <div class="item1">
+          <p>{{ data.funFact1 }}</p>
+        </div>
+        <div class="item2">
+          <p>{{ data.funFact2 }}</p>
+        </div>
       </div>
     </div>
 
     <div class="right">
-      <button (click)="closeModal()">Close</button>
-      <img src="" alt="">
-      <div>
-        <a href=""></a>
-        <img src="" alt="">
+      <i (click)="closeModal()" class="fa-solid fa-xmark close-icon"></i>
+      <img class="center-image" src="assets/img/services/service-1.jpg" alt="">
+      <div class="under-image">
+        <a class="follow-me" href="">FOLLOW ME&nbsp;<i class="fa-solid fa-circle-chevron-right"></i></a>
       </div>
     </div>
   </div>

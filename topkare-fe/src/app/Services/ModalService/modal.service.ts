@@ -10,8 +10,8 @@ export class ModalService {
 
   openModal(name: string, firstName: string, location: string, position: string, content: string, funFact1: string, funFact2: string): void {
     const dialogRef = this.dialog.open(ModalTeamComponent, {
-      width: '80%',
-      maxWidth: '400px',
+      width: '70%',
+      height: '90%',
       data: { name, firstName, location, position, content, funFact1, funFact2 },
     });
 

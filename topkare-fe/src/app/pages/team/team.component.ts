@@ -18,7 +18,7 @@ export class TeamComponent {
   }
 
   openModal(): void {
-    this.modalService.openModal('NAME', 'FIRST NAME', 'LOCATION, ', 'POSITION',
+    this.modalService.openModal('NAME', 'FIRST NAME', 'LOCATION, ', ' POSITION',
        '“Since I was a teenager I have been obsessed with money and prestige”. I feel so blessed to have the opportunity to work today in my field and make my family proud of me and my achievements that I would like to take a moment and say thank you to all my customers”',
        'FUN FACT: I have never been able to handle hairsprays well it makes me look like a zombie !',
        'FUN FACT: I have never been able to handle hairsprays well it makes me look like a zombie !');

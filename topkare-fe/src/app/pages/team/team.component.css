@@ -4,6 +4,7 @@ img{
   height: auto;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 58px;
 }
 
 a{
@@ -13,7 +14,6 @@ a{
   padding: 8px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  width: 100%;
 }
 
 p{
@@ -39,20 +39,28 @@ p{
 }
 
 .left-container{
-  font-size: 35px;
+  width: 60%;
+  justify-self: end;
+  margin-top: 50px;
+}
+
+div.left-container h1{
+  font-size: 55px;
+  font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   text-align: end;
-  width: 60%;
+  line-height: 60px;
+  width: 90%;
 }
 
 .right-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 30%;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  margin-top: 50px;
 }
 
 .bottom-container{
@@ -96,6 +104,7 @@ p{
 
 .member-img{
   justify-self: flex-end;
+
 }
 
 .member-container {
@@ -119,4 +128,50 @@ p{
 
 .show-more:hover{
   transform: scale(1.4);
+}
+
+@media screen and (max-width: 776px) {
+  .top-container{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left-container,
+  .right-container{
+    width: 90%;
+  }
+
+  .bottom-container{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .filters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .filter-text{
+    width: 20%;
+    margin-top: 13px;
+  }
+
+  .members{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .filter-text p.bold{
+    font-size: 10px;
+  }
 }
