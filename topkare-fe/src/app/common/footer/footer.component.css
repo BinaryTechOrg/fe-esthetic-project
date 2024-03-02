@@ -234,8 +234,8 @@ a:hover{
   .right-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 45%;
+    width: 55%;
+    row-gap: 20px;
   }
 
   .links-container {
@@ -327,11 +327,11 @@ a:hover{
   }
 
   a.privacy-link{
-    font-size: 8px;
+    font-size: 6px;
   }
 
   a.cookie-link{
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .newsletter-header{

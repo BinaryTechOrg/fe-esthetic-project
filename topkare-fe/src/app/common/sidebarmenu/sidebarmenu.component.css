@@ -3,8 +3,14 @@ nav {
   font-family: 'Open Sans', sans-serif;
 }
 
-img{
-  margin-bottom: 50px;
+.img{
+
+}
+
+.logo img{
+  object-fit: cover;
+  width: 200px;
+  height: auto;
 }
 
 p{
@@ -33,12 +39,15 @@ p{
   background-color: #3A5A40;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease-out; /* Add smooth transition */
   z-index: 9999;
 }
 
 .close{
-  position: fixed;
+  position: absolute;
+  top: 0;
   right: 0;
   cursor: pointer;
   transition: transform 0.7s ease-in-out;

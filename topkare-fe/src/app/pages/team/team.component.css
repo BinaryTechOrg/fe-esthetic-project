@@ -11,7 +11,7 @@ a{
   background-color: #ffff;
   color: black;
   border-radius: 24px;
-  padding: 8px;
+  padding: 4px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
 }
@@ -65,7 +65,7 @@ div.left-container h1{
 
 .bottom-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
 }
 
@@ -85,13 +85,13 @@ div.left-container h1{
   align-items: flex-start;
   width: 60%;
   padding: 20px;
+  margin-top: 13px;
 }
 
 .members{
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .first{
@@ -165,6 +165,7 @@ div.left-container h1{
   }
 
   .members{
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
